@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VVW Turnhout/Cursussen</title>
+        <meta name="description" content="Zeilclub in turnhout">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="nieuws.html">Nieuws</a>
+  <a href="lid-worden.html">Lid worden</a>
+  <a href="bootreserveren.html">Boot reserveren</a>
+  <a href="agenda.html">Agenda</a>
+  <a class="active" href="cursussen.html">Cursussen</a> 
+  <a href="jeugdwerking.html">Jeugdwerking</a>
+  <div class="topnav-right"> 
+    <a href="https://www.windy.com/51.295/4.963?51.294,4.964,18"target="_blank">Weer</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+    <h1>Cursussen
+        </h1>
+        <h4>
+        <div id="Optimist" class="tabcontent">
+  <h1>Optimist</h1>
+  <p>biginners boot</p>
+</div>
+
+<div id="Rs Tera" class="tabcontent">
+  <h1>Rs Tera</h1>
+  <p>upgrade van optimist
+    </p>
+</div>
+
+<div id="Splash" class="tabcontent">
+  <h1>Splash</h1>
+  <p>snelle boot</p>
+</div>
+
+<div id="420" class="tabcontent">
+  <h1>420</h1>
+  <p>tweemansboot</p>
+</div>
+
+<button class="tablink" onclick="openCity('Optimist', this, 'red')" id="defaultOpen">Optimist</button>
+<button class="tablink" onclick="openCity('Rs Tera', this, 'green')">Rs Tera</button>
+<button class="tablink" onclick="openCity('Splash', this, 'blue')">Splash</button>
+<button class="tablink" onclick="openCity('420', this, 'orange')">420</button> <h4>
+    </body>
+</html>
+        <script>
+ function openCity(cityName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(cityName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click(); </script>

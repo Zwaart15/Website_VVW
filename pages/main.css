@@ -54,13 +54,12 @@ img {
     margin: 1.3em auto;
     max-width: 95%;
 }
-/* Add a white background color to the top navigation */
+
 .topnav {
     background-color: white;
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: blue;
@@ -70,19 +69,46 @@ img {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
+
 .topnav a:hover {
   background-color: #dde;
   color: black;
 }
 
-/* Add a color to the active/current link */
+
 .topnav a.active {
   background-color: navy;
   color: white;
 }
 
-/* Right-aligned section inside the top navigation */
+
 .topnav-right {
   float: right;
 }
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+
